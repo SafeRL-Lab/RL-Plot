@@ -29,11 +29,11 @@ STEPS = 500
 # simpleaveraging_mean = np.load("plot_data/simpleaveraging_reward.npy").mean(axis=-1)[:STEPS]
 # simpleaveraging_std = np.load("plot_data/simpleaveraging_reward.npy").std(axis=-1)[:STEPS]
 
-reward_mean1_without_momentum = np.load("/home/shangding/mycode/MO-SafeRL/CMORL-v02-without-momentum/CMORL/cmorl/data/walker2d/reward.npy").mean(axis=-1)[:STEPS]
-reward_mean2_without_momentum = np.load("/home/shangding/mycode/MO-SafeRL/CMORL-v02-without-momentum/CMORL/cmorl/data/walker2d/reward2.npy").mean(axis=-1)[:STEPS]
+reward_mean1_without_momentum = np.load("/home/data/walker2d/reward.npy").mean(axis=-1)[:STEPS]
+reward_mean2_without_momentum = np.load("/home/data/walker2d/reward2.npy").mean(axis=-1)[:STEPS]
 
-reward_mean1_with_momentum = np.load("/home/shangding/mycode/MO-SafeRL/CMORL-v02-with-momentum/CMORL/cmorl/data/walker2d/reward.npy").mean(axis=-1)[:STEPS]
-reward_mean2_with_momentum = np.load("/home/shangding/mycode/MO-SafeRL/CMORL-v02-with-momentum/CMORL/cmorl/data/walker2d/reward2.npy").mean(axis=-1)[:STEPS]
+reward_mean1_with_momentum = np.load("/home/data/walker2d/reward.npy").mean(axis=-1)[:STEPS]
+reward_mean2_with_momentum = np.load("/home/data/walker2d/reward2.npy").mean(axis=-1)[:STEPS]
 
 # x = np.linspace(0, STEPS)
 x = np.arange(0, STEPS, 1)
@@ -68,5 +68,5 @@ plt.title('HalfCheetah Performance')
 #     alpha=0.2, color = 'y')
 # plt.ylim((-100, 0))
 # plt.show()
-f.savefig("/home/shangding/mycode/MO-SafeRL/CMORL-v02-without-momentum/CMORL/cmorl/plot_figures/figures/CMORL-HalfVheetah=Rewards.pdf", bbox_inches='tight')
+f.savefig("/home/plot_figures/figures/Rewards.pdf", bbox_inches='tight')
 plt.show()
